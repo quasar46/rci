@@ -145,21 +145,21 @@ gulp.task("refresh", function (done) {
     done();
 });
 
-// gulp.task("copy", function () {
-//     return gulp.src([
-//         "src/fonts/**/*.{woff,woff2}",
-//         "src/img/**",
-//         // "src/js/**",
-//         // "src/*.ico"
-//     ], {
-//         base: "source"
-//     })
-//         .pipe(gulp.dest("build"));
-// });
+gulp.task("copy", function () {
+    return gulp.src([
+        "src/fonts/**/*.{woff,woff2}",
+        // "src/img/**",
+        // "src/js/**",
+        // "src/*.ico"
+    ], {
+        base: "src"
+    })
+        .pipe(gulp.dest("build"));
+});
 
 gulp.task("clean", function () {
     return del("build");
 });
 
-gulp.task("build", gulp.series("clean", "css", "images", "vendor", "pug", "js"));
+gulp.task("build", gulp.series("clean", "copy", "css", "images", "vendor", "pug", "js"));
 gulp.task("start", gulp.series("build", "server"));
