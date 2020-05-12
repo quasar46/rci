@@ -3,60 +3,67 @@ html(lang="ru")
 	head
 		include modules/head.pug
 	body
-		include modules/header.pug
+		.content
+			include modules/header.pug
 
-		main
-			.container
-				// breadcrumbs
-				ul.breadcrumbs
-					li
-						a(href="index.html") Главная
-					li
-						span 
-							<svg width="7" height="11" viewBox="0 0 133 241" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"  style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g transform="matrix(1,0,0,1,-2.7467,-3.90243e-14)"><g id="Chevron_Right_1_" transform="matrix(1,0,0,1,-51.3663,0)"><path d="M183.189,111.816L74.892,3.555C70.14,-1.185 62.441,-1.185 57.677,3.555C52.925,8.295 52.925,15.994 57.677,20.734L157.384,120.405L57.689,220.076C52.937,224.816 52.937,232.515 57.689,237.267C62.441,242.007 70.152,242.007 74.904,237.267L183.201,129.006C187.881,124.315 187.881,116.495 183.189,111.816Z" style="fill:rgb(90,39,18);fill-rule:nonzero;"/></g></g></svg>
-					li Интеграция
-				// интеграция
-				
-			section.integration
-				h1.title.container Интеграция РЦИ <i class="br"></i>  Курской области
-				.graph
-					.container
-						h3.title Интеграция РЦИ Курской области в инфраструктуру поддержки предприятий производственного сектора субъектов малого и среднего бизнеса
-						.graph__picture
-							img(src="images/graph.png" alt="")
-							a(href="images/graph.png" data-fancybox="gallery").graph__glass
-								img(src="images/icons/glass.png" alt="")
-
-			// партнеры
-			section.partners
+			main
 				.container
-					h2.title Наши партнеры
-					ul.slider-partners
-						li.slider-partners__item
-							a(href="")
-								img(src="images/partners/item.png" alt="" width="57" height="60")
-								span Администрация <br> Курской области
-						li.slider-partners__item
-							a(href="")
-								img(src="images/partners/item2.png" alt="" width="57" height="60")
-								span Комитет промышленности, <br> торговли и предпринимательства
-						li.slider-partners__item
-							a(href="")
-								img(src="images/partners/item3.png" alt="" width="175" height="53")
-								span Фонд Развития <br> Промышленности
-						li.slider-partners__item
-							a(href="")
-								img(src="images/partners/item.png" alt="" width="57" height="60")
-								span Администрация <br> Курской области
-						li.slider-partners__item
-							a(href="")
-								img(src="images/partners/item2.png" alt="" width="57" height="60")
-								span Комитет промышленности, <br> торговли и предпринимательства
-						li.slider-partners__item
-							a(href="")
-								img(src="images/partners/item3.png" alt="" width="175" height="53")
-								span Фонд Развития <br> Промышленности
+					// breadcrumbs
+					ul.breadcrumbs
+						li
+							a(href="index.html") Главная
+						li
+							span 
+								<svg width="7" height="11" viewBox="0 0 133 241" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"  style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g transform="matrix(1,0,0,1,-2.7467,-3.90243e-14)"><g id="Chevron_Right_1_" transform="matrix(1,0,0,1,-51.3663,0)"><path d="M183.189,111.816L74.892,3.555C70.14,-1.185 62.441,-1.185 57.677,3.555C52.925,8.295 52.925,15.994 57.677,20.734L157.384,120.405L57.689,220.076C52.937,224.816 52.937,232.515 57.689,237.267C62.441,242.007 70.152,242.007 74.904,237.267L183.201,129.006C187.881,124.315 187.881,116.495 183.189,111.816Z" style="fill:rgb(90,39,18);fill-rule:nonzero;"/></g></g></svg>
+						li Интеграция
+					// интеграция
+					
+				section.integration
+					h1.title.container Интеграция РЦИ <i class="br"></i>  Курской области
+					
+					.graph
+						.container
+							.figure.figure--6
+							.figure.figure--5-2
+							.figure.figure--7
+							.figure.figure--8
+							h3.title Интеграция РЦИ Курской области в инфраструктуру поддержки предприятий производственного сектора субъектов малого и среднего бизнеса
+							.graph__picture
+								img(src="images/graph.png" alt="")
+								a(href="images/graph.png" data-fancybox="gallery").graph__glass
+									img(src="images/icons/glass.png" alt="")
 
-		include modules/menu-mobile.pug
+				// партнеры
+				section.partners
+					.container
+						.figure.figure--1
+						h2.title Наши партнеры
+						ul.slider-partners
+							li.slider-partners__item
+								a(href="")
+									img(src="images/partners/item.png" alt="" width="57" height="60")
+									span Администрация <br> Курской области
+							li.slider-partners__item
+								a(href="")
+									img(src="images/partners/item2.png" alt="" width="57" height="60")
+									span Комитет промышленности, <br> торговли и предпринимательства
+							li.slider-partners__item
+								a(href="")
+									img(src="images/partners/item3.png" alt="" width="175" height="53")
+									span Фонд Развития <br> Промышленности
+							li.slider-partners__item
+								a(href="")
+									img(src="images/partners/item.png" alt="" width="57" height="60")
+									span Администрация <br> Курской области
+							li.slider-partners__item
+								a(href="")
+									img(src="images/partners/item2.png" alt="" width="57" height="60")
+									span Комитет промышленности, <br> торговли и предпринимательства
+							li.slider-partners__item
+								a(href="")
+									img(src="images/partners/item3.png" alt="" width="175" height="53")
+									span Фонд Развития <br> Промышленности
+
 		include modules/footer.pug
+		include modules/menu-mobile.pug
 		include modules/script.pug

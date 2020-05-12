@@ -3,66 +3,69 @@ html(lang="ru")
 	head
 		include modules/head.pug
 	body
-		include modules/header.pug
+		.content
+			include modules/header.pug
 
-		main
-			.container
-				// breadcrumbs
-				ul.breadcrumbs
-					li
-						a(href="index.html") Главная
-					li
-						span 
-							<svg width="7" height="11" viewBox="0 0 133 241" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g transform="matrix(1,0,0,1,-2.7467,-3.90243e-14)"><g id="Chevron_Right_1_" transform="matrix(1,0,0,1,-51.3663,0)"><path d="M183.189,111.816L74.892,3.555C70.14,-1.185 62.441,-1.185 57.677,3.555C52.925,8.295 52.925,15.994 57.677,20.734L157.384,120.405L57.689,220.076C52.937,224.816 52.937,232.515 57.689,237.267C62.441,242.007 70.152,242.007 74.904,237.267L183.201,129.006C187.881,124.315 187.881,116.495 183.189,111.816Z" style="fill:rgb(90,39,18);fill-rule:nonzero;"/></g></g></svg>
-					li Документы
-
-			// download documents
-			section.documents
+			main
 				.container
-					h1.title Документы
-					ul.documents__list
+					// breadcrumbs
+					ul.breadcrumbs
 						li
-							a(href="" download) Перечень документов для инжиниринговых компаний
+							a(href="index.html") Главная
 						li
-							a(href="" download) Типовой 3-х сторонний договор РЦИ
-						li
-							a(href="" download) Типовой 3-х сторонний договор РЦИ
-						li
-							a(href="" download) Запрос на оказание услуг РЦИ
-						li
-							a(href="" download) Порядок предоставления услуг РЦИ
-						li
-							a(href="" download) Согласие на обработку персональных данных
-						li
-							a(href="" download) Перечень услуг РЦИ
-						li
-							a(href="" download) Протокол об утверждении порядка оказания услуг №2 от 24.01.2020
+							span 
+								<svg width="7" height="11" viewBox="0 0 133 241" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g transform="matrix(1,0,0,1,-2.7467,-3.90243e-14)"><g id="Chevron_Right_1_" transform="matrix(1,0,0,1,-51.3663,0)"><path d="M183.189,111.816L74.892,3.555C70.14,-1.185 62.441,-1.185 57.677,3.555C52.925,8.295 52.925,15.994 57.677,20.734L157.384,120.405L57.689,220.076C52.937,224.816 52.937,232.515 57.689,237.267C62.441,242.007 70.152,242.007 74.904,237.267L183.201,129.006C187.881,124.315 187.881,116.495 183.189,111.816Z" style="fill:rgb(90,39,18);fill-rule:nonzero;"/></g></g></svg>
+						li Документы
 
-			// сотрудничество
-			section.cooperation
-				.container
-					h2.title остались вопросы? задавайте!
-					.cooperation__form
-						form(method="get")
-							.cooperation__row
-								.cooperation__form-col
-									p
-										label Ваше имя
-										input(type="text")
-									p
-										label Ваш телефон
-										input(type="tel")
-								.cooperation__form-col
-									p
-										label Ваш комментарий
-										textarea()
-							.cooperation__row
-								input(type="checkbox" id="checkbox") 
-								label(for="checkbox") Отправляя форму, я даю согласие на <a href="#">обработку персональных данных</a>, подтверждаю согласие с <a href="#">политикой конфиденциальности и условиями пользовательского соглашения</a>, а также на получение информационных рассылок от проекта и партнеров проекта.
-								button.main-button Отправить
+				// download documents
+				section.documents
+					.container
+						.figure.figure--1
+						.figure.figure--2-2
+						h1.title Документы
+						ul.documents__list
+							li
+								a(href="" download) Перечень документов для инжиниринговых компаний
+							li
+								a(href="" download) Типовой 3-х сторонний договор РЦИ
+							li
+								a(href="" download) Типовой 3-х сторонний договор РЦИ
+							li
+								a(href="" download) Запрос на оказание услуг РЦИ
+							li
+								a(href="" download) Порядок предоставления услуг РЦИ
+							li
+								a(href="" download) Согласие на обработку персональных данных
+							li
+								a(href="" download) Перечень услуг РЦИ
+							li
+								a(href="" download) Протокол об утверждении порядка оказания услуг №2 от 24.01.2020
 
+				// сотрудничество
+				section.cooperation
+					.container
+						.figure.figure--6
+						.figure.figure--5-2
+						h2.title остались вопросы? задавайте!
+						.cooperation__form
+							form(method="get")
+								.cooperation__row
+									.cooperation__form-col
+										p
+											label Ваше имя
+											input(type="text")
+										p
+											label Ваш телефон
+											input(type="tel")
+									.cooperation__form-col
+										p
+											label Ваш комментарий
+											textarea()
+								.cooperation__row
+									input(type="checkbox" id="checkbox") 
+									label(for="checkbox") Отправляя форму, я даю согласие на <a href="#">обработку персональных данных</a>, подтверждаю согласие с <a href="#">политикой конфиденциальности и условиями пользовательского соглашения</a>, а также на получение информационных рассылок от проекта и партнеров проекта.
+									button.main-button Отправить
 
-
-		include modules/menu-mobile.pug
 		include modules/footer.pug
+		include modules/menu-mobile.pug
 		include modules/script.pug

@@ -22,11 +22,14 @@
 	}
 }
 
-.address__col:first-child {
+.address__col {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	padding-right: 100px;
+	h2.title {
+		white-space: nowrap;
+	}
 	@media (max-width: 768px) {
 		padding: 40px 0;
 	}

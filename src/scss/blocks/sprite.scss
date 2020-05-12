@@ -1,0 +1,132 @@
+.figure {
+	position: absolute;
+	background-image: url("../images/backgrounds/sprite.png");
+	width: 250px;
+	height: 250px;
+	background-repeat: no-repeat;
+}
+
+.figure--1 {
+	transform: scale(0.5);
+	background-position: 0 0;
+	left: -300px;
+}
+
+.figure--2 {
+	transform: scale(0.3);
+	background-position: -250px 0;
+	left: -350px;
+	top: 700px;
+}
+
+.figure--2-1 {
+	transform: scale(0.3);
+	background-position: -250px 0;
+	right: -350px;
+	top: 400px;
+}
+
+.figure--2-2 {
+	transform: scale(0.3);
+	background-position: -250px 0;
+	right: -350px;
+	bottom: 0px;
+}
+
+.figure--1-2 {
+	transform: scale(0.5);
+	background-position: 0 0;
+	right: -200px;
+	bottom: 50px;
+}
+
+.figure--3 {
+	transform: scale(0.4);
+	background-position: -500px 0;
+	left: -300px;
+	top: 1300px;
+}
+
+.figure--3-1 {
+	transform: scale(0.4);
+	background-position: -500px 0;
+	left: -250px;
+	top: 0;
+}
+
+.figure--3-2 {
+	transform: scale(0.4);
+	background-position: -500px 0;
+	right: -250px;
+	top: 0;
+}
+
+.figure--3-3 {
+	transform: scale(0.4);
+	background-position: -500px 0;
+	right: -350px;
+	top: 300px;
+}
+
+.figure--3-4 {
+	transform: scale(0.4);
+	background-position: -500px 0;
+	right: -100px;
+	top: -100px;
+}
+
+.figure--4 {
+	transform: scale(0.2);
+	background-position: -750px 0;
+	left: -250px;
+	top: 350px;
+}
+
+.figure--4-1 {
+	transform: scale(0.2);
+	background-position: -750px 0;
+	left: -250px;
+	top: 400px;
+}
+
+.figure--4-2 {
+	transform: scale(0.2);
+	background-position: -750px 0;
+	right: -200px;
+	top: 1000px;
+}
+
+.figure--6 {
+	transform: scale(0.3);
+	background-position: -250px -250px;
+	left: -300px;
+	top: 200px;
+}
+
+.figure--5-1 {
+	transform: scale(0.3);
+	background-position: 0px -250px;
+	left: -300px;
+	top: 50px;
+}
+
+.figure--5-2 {
+	transform: scale(0.3);
+	background-position: 0px -250px;
+	right: -300px;
+	top: 50px;
+}
+
+.figure--7 {
+	transform: scale(0.3);
+	background-position: -500px -250px;
+	right: 100px;
+	top: 100px;
+}
+
+.figure--8 {
+	transform: scale(0.3);
+	background-position: -750px -250px;
+	right: -200px;
+	bottom: -100px;
+}

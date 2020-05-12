@@ -3,146 +3,154 @@ html(lang="ru")
 	head
 		include modules/head.pug
 	body
-		include modules/header.pug
+		.content
+			include modules/header.pug
 
-		main
-			.container
-				// breadcrumbs
-				ul.breadcrumbs
-					li
-						a(href="index.html") Главная
-					li
-						span 
-							<svg width="7" height="11" viewBox="0 0 133 241" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g transform="matrix(1,0,0,1,-2.7467,-3.90243e-14)"><g id="Chevron_Right_1_" transform="matrix(1,0,0,1,-51.3663,0)"><path d="M183.189,111.816L74.892,3.555C70.14,-1.185 62.441,-1.185 57.677,3.555C52.925,8.295 52.925,15.994 57.677,20.734L157.384,120.405L57.689,220.076C52.937,224.816 52.937,232.515 57.689,237.267C62.441,242.007 70.152,242.007 74.904,237.267L183.201,129.006C187.881,124.315 187.881,116.495 183.189,111.816Z" style="fill:rgb(90,39,18);fill-rule:nonzero;"/></g></g></svg>
-					li Новости
+			main
+				.container
+					// breadcrumbs
+					ul.breadcrumbs
+						li
+							a(href="index.html") Главная
+						li
+							span 
+								<svg width="7" height="11" viewBox="0 0 133 241" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g transform="matrix(1,0,0,1,-2.7467,-3.90243e-14)"><g id="Chevron_Right_1_" transform="matrix(1,0,0,1,-51.3663,0)"><path d="M183.189,111.816L74.892,3.555C70.14,-1.185 62.441,-1.185 57.677,3.555C52.925,8.295 52.925,15.994 57.677,20.734L157.384,120.405L57.689,220.076C52.937,224.816 52.937,232.515 57.689,237.267C62.441,242.007 70.152,242.007 74.904,237.267L183.201,129.006C187.881,124.315 187.881,116.495 183.189,111.816Z" style="fill:rgb(90,39,18);fill-rule:nonzero;"/></g></g></svg>
+						li Новости
 
-			// новости
-			section.news.container
-				.news__head
-					h1.title Новости РЦИ
-				.news__wrapper
-					ul.news__list.news__list--mode
-						li.news__list-item
-							a(href="")
-								p.news__text Региональный центр инжиниринга Курской области информирует об актуализации реестра инжиниринговых компаний, их компетенций
-								.news__list-bottom
-									span.date 13.04.20
-									button.main-button.main-button--mode Подробнее
-						li.news__list-item.important
-							a(href="")
-								p.news__text До 20 апреля (10:00 мск) 2020 года идет прием заявок на конкурсы по программе «Старт». 
-								.news__list-bottom
-									span.date 14.04.20
-									button.main-button.main-button--mode Подробнее
+				// новости
+				section.news.container
+					.figure.figure--1
+					.figure.figure--4
+					.figure.figure--2
+					.figure.figure--3
+					.figure.figure--3-2
+					.figure.figure--2-1
+					.figure.figure--4-2
+					.news__head
+						h1.title Новости РЦИ
+					.news__wrapper
+						ul.news__list.news__list--mode
+							li.news__list-item
+								a(href="")
+									p.news__text Региональный центр инжиниринга Курской области информирует об актуализации реестра инжиниринговых компаний, их компетенций
+									.news__list-bottom
+										span.date 13.04.20
+										button.main-button.main-button--mode Подробнее
+							li.news__list-item.important
+								a(href="")
+									p.news__text До 20 апреля (10:00 мск) 2020 года идет прием заявок на конкурсы по программе «Старт». 
+									.news__list-bottom
+										span.date 14.04.20
+										button.main-button.main-button--mode Подробнее
 
-						li.news__list-item
-							a(href="")
-								p.news__text Руководитель РЦИ Илья Чернышев принял участие в 23-Й Международной выставке «АВТОМАТИЗАЦИЯ. ЭЛЕКТРОНИКА», (Г. МИНСК, РЕСПУБЛИКА БЕЛАРУСЬ)
-								.news__list-bottom
-									span.date 16.03.20
-									button.main-button.main-button--mode Подробнее
+							li.news__list-item
+								a(href="")
+									p.news__text Руководитель РЦИ Илья Чернышев принял участие в 23-Й Международной выставке «АВТОМАТИЗАЦИЯ. ЭЛЕКТРОНИКА», (Г. МИНСК, РЕСПУБЛИКА БЕЛАРУСЬ)
+									.news__list-bottom
+										span.date 16.03.20
+										button.main-button.main-button--mode Подробнее
 
-						li.news__list-item.important
-							a(href="")
-								p.news__text В понедельник 6 апреля в 10.00 завершится прием заявок на конкурс «Старт-Цифровые платформы».
-								.news__list-bottom
-									span.date 03.04.20
-									button.main-button.main-button--mode Подробнее
+							li.news__list-item.important
+								a(href="")
+									p.news__text В понедельник 6 апреля в 10.00 завершится прием заявок на конкурс «Старт-Цифровые платформы».
+									.news__list-bottom
+										span.date 03.04.20
+										button.main-button.main-button--mode Подробнее
 
-						li.news__list-item
-							a(href="")
-								p.news__text Крупная Российская компания, занятая в сфере переработки углеводородного сырья, проводит поиск потенциальных поставщиков.
-								.news__list-bottom
-									span.date 06.04.20
-									button.main-button.main-button--mode Подробнее
+							li.news__list-item
+								a(href="")
+									p.news__text Крупная Российская компания, занятая в сфере переработки углеводородного сырья, проводит поиск потенциальных поставщиков.
+									.news__list-bottom
+										span.date 06.04.20
+										button.main-button.main-button--mode Подробнее
 
-						li.news__list-item
-							a(href="")
-								p.news__text Руководитель РЦИ Чернышев Илья принял участие в Международной сельскохозяйственной выставке (г. Нур-Султан, Республика Казахстан)
-								.news__list-bottom
-									span.date 23.03.20
-									button.main-button.main-button--mode Подробнее
-						li.news__list-item
-							a(href="")
-								p.news__text Региональный центр инжиниринга Курской области информирует об актуализации реестра инжиниринговых компаний, их компетенций
-								.news__list-bottom
-									span.date 13.04.20
-									button.main-button.main-button--mode Подробнее
-						li.news__list-item.important
-							a(href="")
-								p.news__text До 20 апреля (10:00 мск) 2020 года идет прием заявок на конкурсы по программе «Старт». 
-								.news__list-bottom
-									span.date 14.04.20
-									button.main-button.main-button--mode Подробнее
+							li.news__list-item
+								a(href="")
+									p.news__text Руководитель РЦИ Чернышев Илья принял участие в Международной сельскохозяйственной выставке (г. Нур-Султан, Республика Казахстан)
+									.news__list-bottom
+										span.date 23.03.20
+										button.main-button.main-button--mode Подробнее
+							li.news__list-item
+								a(href="")
+									p.news__text Региональный центр инжиниринга Курской области информирует об актуализации реестра инжиниринговых компаний, их компетенций
+									.news__list-bottom
+										span.date 13.04.20
+										button.main-button.main-button--mode Подробнее
+							li.news__list-item.important
+								a(href="")
+									p.news__text До 20 апреля (10:00 мск) 2020 года идет прием заявок на конкурсы по программе «Старт». 
+									.news__list-bottom
+										span.date 14.04.20
+										button.main-button.main-button--mode Подробнее
 
-						li.news__list-item
-							a(href="")
-								p.news__text Руководитель РЦИ Илья Чернышев принял участие в 23-Й Международной выставке «АВТОМАТИЗАЦИЯ. ЭЛЕКТРОНИКА», (Г. МИНСК, РЕСПУБЛИКА БЕЛАРУСЬ)
-								.news__list-bottom
-									span.date 16.03.20
-									button.main-button.main-button--mode Подробнее
+							li.news__list-item
+								a(href="")
+									p.news__text Руководитель РЦИ Илья Чернышев принял участие в 23-Й Международной выставке «АВТОМАТИЗАЦИЯ. ЭЛЕКТРОНИКА», (Г. МИНСК, РЕСПУБЛИКА БЕЛАРУСЬ)
+									.news__list-bottom
+										span.date 16.03.20
+										button.main-button.main-button--mode Подробнее
 
-						li.news__list-item.important
-							a(href="")
-								p.news__text В понедельник 6 апреля в 10.00 завершится прием заявок на конкурс «Старт-Цифровые платформы».
-								.news__list-bottom
-									span.date 03.04.20
-									button.main-button.main-button--mode Подробнее
+							li.news__list-item.important
+								a(href="")
+									p.news__text В понедельник 6 апреля в 10.00 завершится прием заявок на конкурс «Старт-Цифровые платформы».
+									.news__list-bottom
+										span.date 03.04.20
+										button.main-button.main-button--mode Подробнее
 
-						li.news__list-item
-							a(href="")
-								p.news__text Крупная Российская компания, занятая в сфере переработки углеводородного сырья, проводит поиск потенциальных поставщиков.
-								.news__list-bottom
-									span.date 06.04.20
-									button.main-button.main-button--mode Подробнее
+							li.news__list-item
+								a(href="")
+									p.news__text Крупная Российская компания, занятая в сфере переработки углеводородного сырья, проводит поиск потенциальных поставщиков.
+									.news__list-bottom
+										span.date 06.04.20
+										button.main-button.main-button--mode Подробнее
 
-						li.news__list-item
-							a(href="")
-								p.news__text Руководитель РЦИ Чернышев Илья принял участие в Международной сельскохозяйственной выставке (г. Нур-Султан, Республика Казахстан)
-								.news__list-bottom
-									span.date 23.03.20
-									button.main-button.main-button--mode Подробнее
-						li.news__list-item
-							a(href="")
-								p.news__text Региональный центр инжиниринга Курской области информирует об актуализации реестра инжиниринговых компаний, их компетенций
-								.news__list-bottom
-									span.date 13.04.20
-									button.main-button.main-button--mode Подробнее
-						li.news__list-item.important
-							a(href="")
-								p.news__text До 20 апреля (10:00 мск) 2020 года идет прием заявок на конкурсы по программе «Старт». 
-								.news__list-bottom
-									span.date 14.04.20
-									button.main-button.main-button--mode Подробнее
+							li.news__list-item
+								a(href="")
+									p.news__text Руководитель РЦИ Чернышев Илья принял участие в Международной сельскохозяйственной выставке (г. Нур-Султан, Республика Казахстан)
+									.news__list-bottom
+										span.date 23.03.20
+										button.main-button.main-button--mode Подробнее
+							li.news__list-item
+								a(href="")
+									p.news__text Региональный центр инжиниринга Курской области информирует об актуализации реестра инжиниринговых компаний, их компетенций
+									.news__list-bottom
+										span.date 13.04.20
+										button.main-button.main-button--mode Подробнее
+							li.news__list-item.important
+								a(href="")
+									p.news__text До 20 апреля (10:00 мск) 2020 года идет прием заявок на конкурсы по программе «Старт». 
+									.news__list-bottom
+										span.date 14.04.20
+										button.main-button.main-button--mode Подробнее
 
-						li.news__list-item
-							a(href="")
-								p.news__text Руководитель РЦИ Илья Чернышев принял участие в 23-Й Международной выставке «АВТОМАТИЗАЦИЯ. ЭЛЕКТРОНИКА», (Г. МИНСК, РЕСПУБЛИКА БЕЛАРУСЬ)
-								.news__list-bottom
-									span.date 16.03.20
-									button.main-button.main-button--mode Подробнее
+							li.news__list-item
+								a(href="")
+									p.news__text Руководитель РЦИ Илья Чернышев принял участие в 23-Й Международной выставке «АВТОМАТИЗАЦИЯ. ЭЛЕКТРОНИКА», (Г. МИНСК, РЕСПУБЛИКА БЕЛАРУСЬ)
+									.news__list-bottom
+										span.date 16.03.20
+										button.main-button.main-button--mode Подробнее
 
-						li.news__list-item.important
-							a(href="")
-								p.news__text В понедельник 6 апреля в 10.00 завершится прием заявок на конкурс «Старт-Цифровые платформы».
-								.news__list-bottom
-									span.date 03.04.20
-									button.main-button.main-button--mode Подробнее
+							li.news__list-item.important
+								a(href="")
+									p.news__text В понедельник 6 апреля в 10.00 завершится прием заявок на конкурс «Старт-Цифровые платформы».
+									.news__list-bottom
+										span.date 03.04.20
+										button.main-button.main-button--mode Подробнее
 
-						li.news__list-item
-							a(href="")
-								p.news__text Крупная Российская компания, занятая в сфере переработки углеводородного сырья, проводит поиск потенциальных поставщиков.
-								.news__list-bottom
-									span.date 06.04.20
-									button.main-button.main-button--mode Подробнее
+							li.news__list-item
+								a(href="")
+									p.news__text Крупная Российская компания, занятая в сфере переработки углеводородного сырья, проводит поиск потенциальных поставщиков.
+									.news__list-bottom
+										span.date 06.04.20
+										button.main-button.main-button--mode Подробнее
 
-						li.news__list-item
-							a(href="")
-								p.news__text Руководитель РЦИ Чернышев Илья принял участие в Международной сельскохозяйственной выставке (г. Нур-Султан, Республика Казахстан)
-								.news__list-bottom
-									span.date 23.03.20
-									button.main-button.main-button--mode Подробнее
+							li.news__list-item
+								a(href="")
+									p.news__text Руководитель РЦИ Чернышев Илья принял участие в Международной сельскохозяйственной выставке (г. Нур-Султан, Республика Казахстан)
+									.news__list-bottom
+										span.date 23.03.20
+										button.main-button.main-button--mode Подробнее
 
-		include modules/menu-mobile.pug
 		include modules/footer.pug
+		include modules/menu-mobile.pug
 		include modules/script.pug
