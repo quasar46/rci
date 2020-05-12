@@ -1,0 +1,20 @@
+.integration {
+	padding-top: 80px;
+	h3.title {
+		margin-bottom: 40px;
+	}
+	h2.title {
+		i.br {
+			display: none;
+			@media (max-width: 768px) {
+				display: block;
+			}
+		}
+		@media (max-width: 768px) {
+			text-align: center;
+		}
+	}
+	@media (max-width: 768px) {
+		padding-top: 45px;
+	}
+}

@@ -1,0 +1,13 @@
+.partners {
+	padding-top: 100px;
+	padding-bottom: 50px;
+	h2.title {
+		@media (max-width: 768px) {
+			margin-bottom: 30px;
+			text-align: center;
+		}
+	}
+	@media (max-width: 768px) {
+		padding-top: 50px;
+	}
+}

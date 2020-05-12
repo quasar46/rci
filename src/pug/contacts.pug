@@ -1,0 +1,71 @@
+doctype html
+html(lang="ru")
+	head
+		include modules/head.pug
+	body
+		include modules/header.pug
+
+		main
+			.container
+				// breadcrumbs
+				ul.breadcrumbs
+					li
+						a(href="index.html") Главная
+					li
+						span 
+							<svg width="7" height="11" viewBox="0 0 133 241" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g transform="matrix(1,0,0,1,-2.7467,-3.90243e-14)"><g id="Chevron_Right_1_" transform="matrix(1,0,0,1,-51.3663,0)"><path d="M183.189,111.816L74.892,3.555C70.14,-1.185 62.441,-1.185 57.677,3.555C52.925,8.295 52.925,15.994 57.677,20.734L157.384,120.405L57.689,220.076C52.937,224.816 52.937,232.515 57.689,237.267C62.441,242.007 70.152,242.007 74.904,237.267L183.201,129.006C187.881,124.315 187.881,116.495 183.189,111.816Z" style="fill:rgb(90,39,18);fill-rule:nonzero;"/></g></g></svg>
+					li Контакты
+
+			.section.contacts-date.container
+				.contacts-date__col.container
+					h1.title Контактные данные
+					h3.title Адрес и телефоны
+					p
+						b Адрес 
+						span 305000, г. Курск, ул. Горького, д. 65
+					p
+						b Тел.: 
+						span  +7 (4712) 70-33-77; 70-33-48; 70-33-35
+					p
+						b Моб.:
+						span +7 (951) 334-44-03
+					p
+						b Факс:
+						span +7 (4712) 70-33-77
+					h3.title Реквизиты Регионального центра инжиниринга Курской области
+					p
+						b Адрес
+						span 305000, г. Курск, ул. Горького, д. 65
+					p
+						b ИНН:
+						span 4632066518
+					p
+						b КПП:
+						span  463201001
+					p
+						b ОГРН: 
+						span 1064600009583
+					h3.title Банковские реквизиты филиала "Центральный" банка ВТБ (ПАО)
+					p
+						b р/с:
+						span  40701810900520090037
+					p
+						b к/с:
+						span  30101810145250000411
+					p
+						b БИК:
+						span  044525411
+					p
+						b Тел.: 
+						span +7 (4712) 70-33-77
+					p
+						b Директор:
+						span Ильинова Ольга Владимировна
+
+				.contacts-date__col.contacts-date__col--map
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2470.5820767663067!2d36.19579131583602!3d51.740678979674065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x412f03bfab65f6d5%3A0x48ebfb2b82e7a3b7!2sUlitsa%20Gor&#39;kogo%2C%2065%2C%20Kursk%2C%20Kurskaya%20oblast&#39;%2C%20305000!5e0!3m2!1sen!2sru!4v1589267556047!5m2!1sen!2sru" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+
+		include modules/menu-mobile.pug
+		include modules/footer.pug
+		include modules/script.pug

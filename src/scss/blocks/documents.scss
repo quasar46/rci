@@ -1,0 +1,62 @@
+.documents {
+	padding-top: 80px;
+	padding-bottom: 60px;
+	h2.title {
+		@media (max-width: 768px) {
+			text-align: center;
+		}
+	}
+	@media (max-width: 768px) {
+		padding-top: 45px;
+		padding-bottom: 45px;
+	}
+}
+
+.documents__list {
+	display: flex;
+	flex-wrap: wrap;
+	li {
+		width: 50%;
+		line-height: 2;
+
+		a {
+			font-size: 16px;
+			color: $color-main;
+			font-weight: 400;
+			position: relative;
+			padding-left: 30px;
+			display: flex;
+			&::after {
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 50%;
+				transform: translateY(-50%);
+				background-image: url("../images/icons/marker.png");
+				width: 18px;
+				height: 24px;
+				background-size: cover;
+				background-repeat: no-repeat;
+				@media (max-width: 768px) {
+					top: 0;
+					transform: translateY(20%);
+				}
+			}
+			&:hover {
+				color: $color-red;
+			}
+			@media (max-width: 768px) {
+				font-size: 14px;
+			}
+		}
+	}
+	@media (max-width: 768px) {
+		flex-direction: column;
+		li {
+			width: 100%;
+		}
+	}
+	&--mode {
+		flex-direction: column;
+	}
+}

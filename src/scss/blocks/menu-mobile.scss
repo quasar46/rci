@@ -1,0 +1,33 @@
+.menu-mobile {
+	display: none;
+	top: 0;
+	position: fixed;
+	background-color: $color-white;
+	overflow: hidden;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	padding: 20px;
+	border-bottom: 2px solid $color-beige;
+}
+
+.menu-mobile__list {
+	position: relative;
+	padding-left: 50px;
+	li {
+		line-height: 2;
+	}
+	a {
+		font-size: 16px;
+		font-weight: 400;
+		color: $color-main;
+		text-decoration: none;
+	}
+	.closed {
+		position: absolute;
+		width: 16px;
+		height: 16px;
+		top: 0;
+		left: 0;
+	}
+}

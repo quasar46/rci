@@ -1,0 +1,45 @@
+.accordion-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	.panel {
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.2s ease-out;
+	}
+}
+
+.accordion {
+	transition: 0.4s;
+	font-size: 18px;
+	font-weight: 700;
+	color: $color-main;
+	border: none;
+	background-color: transparent;
+	padding: 0;
+	padding-right: 20px;
+	position: relative;
+	margin-bottom: 10px;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		right: 0;
+		transform: translateY(-50%);
+		background-image: url("../images/icons/arrow-red.png");
+		width: 7px;
+		height: 12px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		transition: 0.3s;
+	}
+	&.active {
+		&::before {
+			transform: translateY(-50%) rotate(90deg);
+			transition: 0.3s;
+		}
+	}
+	@media (max-width: 768px) {
+		font-size: 14px;
+	}
+}

@@ -1,0 +1,38 @@
+.article {
+	h3.title {
+		@media (max-width: 768px) {
+			font-size: 16px;
+		}
+	}
+	p.text {
+		@media (max-width: 768px) {
+			font-size: 16px;
+		}
+	}
+	padding-top: 60px;
+	p.text {
+		margin-bottom: 20px;
+		a {
+			color: $color-main;
+		}
+	}
+}
+
+.article__head {
+	margin-bottom: 40px;
+}
+
+.article__banner {
+	margin-bottom: 55px;
+	@media (max-width: 768px) {
+		display: none;
+	}
+}
+
+.article__date {
+	display: flex;
+	align-items: center;
+	span {
+		margin-right: 10px;
+	}
+}

@@ -1,0 +1,16 @@
+.service {
+	padding-top: 80px;
+	padding-bottom: 70px;
+	h3.title {
+		margin-bottom: 20px;
+	}
+	p.text {
+		margin-bottom: 30px;
+		a {
+			color: $color-main;
+		}
+	}
+	.documents__list {
+		margin-bottom: 20px;
+	}
+}

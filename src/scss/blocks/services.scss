@@ -1,0 +1,120 @@
+.services {
+	padding-top: 80px;
+	@media (max-width: 768px) {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.title {
+		@media (max-width: 768px) {
+			margin-bottom: 15px;
+		}
+	}
+}
+
+.services__head {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	@media (max-width: 768px) {
+		flex-direction: column;
+		justify-content: center;
+		.main-button {
+			align-self: center;
+			margin-bottom: 30px;
+		}
+	}
+}
+
+.services__list {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -30px;
+	&--desctop {
+		@media (max-width: 768px) {
+			display: none;
+		}
+	}
+	&--mobile {
+		margin-right: 0;
+		display: none;
+		li {
+			line-height: 2;
+			position: relative;
+			&::before {
+				content: "";
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				right: 0;
+				width: 20px;
+				height: 20px;
+				border-radius: 50%;
+				background-color: $color-red;
+				background-image: url("../images/icons/arrow.png");
+				background-size: 7px 11px;
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+		}
+		a {
+			display: block;
+			text-decoration: none;
+			font-size: 14px;
+			color: $color-black;
+			font-weight: 700;
+		}
+		@media (max-width: 768px) {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+}
+
+.services__list-item {
+	width: calc(100% / 3);
+	padding-right: 30px;
+	margin-bottom: 30px;
+	height: 303px;
+	&:hover {
+		.main-button {
+			background-color: $color-white;
+			color: $color-red;
+			border: 1px solid $color-red;
+			transition: 0.3s;
+		}
+	}
+	a {
+		text-decoration: none;
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		border-radius: 20px;
+		padding: 50px 45px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		.main-button {
+			margin-top: auto;
+		}
+	}
+	@media (max-width: 992px) {
+		width: calc(100% / 2);
+	}
+	@media (max-width: 768px) {
+		padding-bottom: 15px;
+	}
+}
+
+.services__list-title {
+	font-size: 18px;
+	font-weight: 700;
+	color: $color-black;
+	padding-right: 140px;
+
+	@media (max-width: 768px) {
+		font-size: 14px;
+	}
+}
+
+.services__wrapper {
+	position: relative;
+}

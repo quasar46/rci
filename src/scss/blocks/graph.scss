@@ -1,0 +1,40 @@
+.graph {
+	position: relative;
+	background-color: $color-beige;
+	padding: 60px 0;
+	overflow: hidden;
+	// &::before {
+	// 	content: "";
+	// 	position: absolute;
+	// 	width: 270px;
+	// 	height: 270px;
+	// 	border: 13px solid $color-beige;
+	// 	border-radius: 50%;
+	// 	background-color: $color-red;
+	// 	bottom: -40%;
+	// 	right: -40%;
+	// 	background-image: url("../images/icons/glass.png");
+	// 	background-size: 50px 50px;
+	// 	background-repeat: no-repeat;
+	// 	background-position: 50px 50px;
+	// 	cursor: pointer;
+	// }
+	h2.title {
+		@media (max-width: 768px) {
+			font-size: 20px;
+			text-align: center;
+		}
+	}
+}
+
+.graph__glass {
+	display: none;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	font-size: 0;
+	cursor: pointer;
+	@media (max-width: 768px) {
+		display: block;
+	}
+}

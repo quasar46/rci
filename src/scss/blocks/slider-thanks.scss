@@ -1,0 +1,14 @@
+.slider-thanks {
+	padding: 0 30px;
+	margin-bottom: 20px;
+}
+
+.slider-thanks__item {
+	display: flex !important;
+	justify-content: center;
+	img {
+		@media (max-width: 768px) {
+			padding: 0 10px;
+		}
+	}
+}

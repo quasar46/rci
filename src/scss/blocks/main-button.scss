@@ -1,0 +1,37 @@
+.main-button {
+	background-color: $color-red;
+	border-radius: 20px;
+	color: $color-white;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 8px 20px;
+	border: 1px solid transparent;
+	align-self: flex-start;
+	text-decoration: none;
+	&:hover {
+		background-color: $color-white;
+		color: $color-red;
+		border: 1px solid $color-red;
+		transition: 0.3s;
+	}
+
+	&--mode {
+		background-color: transparent;
+		color: $color-red;
+		border: 1px solid $color-red;
+		display: block;
+		&:hover {
+			background-color: $color-red;
+			color: $color-white;
+			transition: 0.3s;
+		}
+	}
+	&--desctop {
+		@media (max-width: 768px) {
+			display: none;
+		}
+	}
+	@media (max-width: 768px) {
+		font-size: 14px;
+	}
+}
