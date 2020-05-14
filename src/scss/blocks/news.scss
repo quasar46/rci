@@ -42,7 +42,7 @@
 		width: calc(100% / 3);
 		min-height: 200px;
 		padding: 25px 20px;
-		border: 1px solid $color-beige;
+		outline: 1px solid $color-beige;
 		&:hover {
 			.main-button {
 				background-color: $color-red;
@@ -64,6 +64,7 @@
 		&.important {
 			background-color: $color-beige;
 		}
+
 		@media (max-width: 992px) {
 			width: calc(100% / 2);
 		}
@@ -72,6 +73,7 @@
 			padding: 25px;
 			border-radius: 20px;
 			overflow: hidden;
+			outline: none;
 		}
 	}
 	@media (max-width: 768px) {

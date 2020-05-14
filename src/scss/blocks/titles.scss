@@ -5,6 +5,9 @@ h2.title {
 	color: $color-main;
 	text-transform: uppercase;
 	margin-bottom: 50px;
+	&--mode {
+		text-transform: none;
+	}
 	@media (max-width: 768px) {
 		font-size: 20px;
 	}

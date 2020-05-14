@@ -1,0 +1,32 @@
+doctype html
+html(lang="ru")
+	head
+		include modules/head.pug
+	body
+		.content
+			include modules/header.pug
+
+			main
+				.container
+					// breadcrumbs
+					ul.breadcrumbs
+						li
+							a(href="index.html") Главная
+						li
+							span 
+								<svg width="7" height="11" viewBox="0 0 133 241" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g transform="matrix(1,0,0,1,-2.7467,-3.90243e-14)"><g id="Chevron_Right_1_" transform="matrix(1,0,0,1,-51.3663,0)"><path d="M183.189,111.816L74.892,3.555C70.14,-1.185 62.441,-1.185 57.677,3.555C52.925,8.295 52.925,15.994 57.677,20.734L157.384,120.405L57.689,220.076C52.937,224.816 52.937,232.515 57.689,237.267C62.441,242.007 70.152,242.007 74.904,237.267L183.201,129.006C187.881,124.315 187.881,116.495 183.189,111.816Z" style="fill:rgb(90,39,18);fill-rule:nonzero;"/></g></g></svg>
+						li Личный кабинет
+
+				section.personal
+					.container
+						.personal__head
+							h1.title Личный кабинет
+							button.main-button.main-button--mode Настроить
+						h2.title.title--mode Петрославский Иннокентий Константинович
+						p.text Областное казенное учреждение "Центр межкольцевого взаимопонимания"
+						p.text ИНН: 0987654321234567890
+
+
+		include modules/footer.pug
+		include modules/menu-mobile.pug
+		include modules/script.pug

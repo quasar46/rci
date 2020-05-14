@@ -188,8 +188,9 @@
 			padding-right: 50px;
 			position: relative;
 			cursor: pointer;
+			color: $color-main;
 			a {
-				color: $color-black;
+				color: $color-main;
 			}
 			&::after {
 				content: "";

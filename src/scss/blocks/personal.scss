@@ -1,0 +1,22 @@
+.personal {
+	padding-top: 80px;
+	padding-bottom: 60px;
+	h1.title {
+		margin-bottom: 0;
+	}
+	h2.title.title--mode {
+		margin-bottom: 10px;
+	}
+	@media (max-width: 768px) {
+		padding: 50px 0;
+	}
+}
+
+.personal__head {
+	display: flex;
+	align-items: center;
+	margin-bottom: 50px;
+	h1.title {
+		margin-right: 25px;
+	}
+}
